@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/neox">
-    <img src="https://img.shields.io/npm/v/neox.svg"/>
-    <img src="https://img.shields.io/npm/dm/neox.svg"/>
+  <a href="https://www.npmjs.com/package/@neocoast/neox">
+    <img src="https://img.shields.io/npm/v/@neocoast/neox.svg"/>
+    <img src="https://img.shields.io/npm/dm/@neocoast/neox.svg"/>
   </a>
 </p>
 

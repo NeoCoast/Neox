@@ -1,12 +1,22 @@
 {
   "name": "@neocoast/neox",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Data structure supporting new redux hooks",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoCoast/neox.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeoCoast/neox/issues"
+  },
+  "homepage": "https://github.com/NeoCoast/neox",
   "author": "tintef,maurocen",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": "redux,redux-hooks,hooks"
 }
