@@ -55,6 +55,22 @@ console.log(state.toJS());
 // {loading: false, username: 'maurocen'}
 ```
 
+### Usage with redux-devtools
+
+In order to correctly see your reducers chart in Redux's devtools, the following needs to be done:
+
+```js
+const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__ ? (
+  window.__REDUX_DEVTOOLS_EXTENSION__({
+    serialize: {
+      replacer: (key, value) => value && value.toJS ? value.toJS() : value
+    },
+  })
+) : (
+  (f) => f
+);
+```
+
 
 ## Motivation
 
