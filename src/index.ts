@@ -1,8 +1,4 @@
-interface Neox {
-  values: Map<string, any>;
-  toJS: () => object;
-  set: (key: string, value: any) => Neox;
-}
+import Neox from './ts/interfaces/Neox';
 
 function fromJS(data: object): Neox {
   const values : Map<string, any> = new Map<string, any>(Object.entries(data));
@@ -19,6 +15,6 @@ function fromJS(data: object): Neox {
   }
 
   return state;
-};
+}
 
 export default fromJS;
