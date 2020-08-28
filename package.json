@@ -5,7 +5,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "npx jest --json --outputFile=jest.results.json",
+    "lint": "eslint . --ext ts,tsx ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
   },
   "repository": {
     "type": "git",
@@ -17,6 +24,19 @@
   },
   "homepage": "https://github.com/NeoCoast/neox",
   "author": "tintef,maurocen",
-  "license": "MIT",
-  "keywords": "redux,redux-hooks,hooks"
+  "keywords": [
+    "redux",
+    "redux-hooks",
+    "hooks"
+  ],
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.7.0",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  }
 }
