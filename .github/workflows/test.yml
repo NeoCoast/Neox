@@ -23,9 +23,7 @@ jobs:
     - name: Run tests
       run: npm run test
 
-    - uses: romeovs/lcov-reporter-action@v0.2.16
+    - uses: tintef/nyc-reporter-action@0.0.7
       if: ${{ github.event_name == 'pull_request' }}
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        lcov-file: ./coverage/lcov.info
-
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
