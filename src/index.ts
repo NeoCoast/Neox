@@ -11,7 +11,7 @@ function fromJS(data: object): Neox {
 
   state.set = (key: string, value: any) => {
     values.set(key, value);
-    return state;
+    return { ...state };
   }
 
   return state;
